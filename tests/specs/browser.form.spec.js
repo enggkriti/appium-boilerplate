@@ -12,7 +12,7 @@ describe('auth form', () => {
 
     it('should allow access with correct creds', () => {
         FormPage.open();
-        FormPage.username.setValue('tomsmith');
+        FormPage.username.setValue('tomsmith_test12');
         FormPage.password.setValue('SuperSecretPassword!');
         FormPage.submit();
         FormPage.flash.waitForDisplayed({ timeout: 3000 });
